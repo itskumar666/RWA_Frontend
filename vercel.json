@@ -1,0 +1,29 @@
+{
+  "name": "zenith-frontend",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_BACKEND_URL": "@backend-url",
+    "VITE_SEPOLIA_RPC_URL": "@sepolia-rpc-url",
+    "VITE_RWA_MANAGER": "@rwa-manager",
+    "VITE_RWA_VERIFIED_ASSETS": "@rwa-verified-assets",
+    "VITE_RWA_NFT": "@rwa-nft"
+  }
+}

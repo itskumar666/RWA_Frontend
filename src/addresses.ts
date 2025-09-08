@@ -1,0 +1,15 @@
+export const SEPOLIA_CHAIN_ID = 11155111;
+
+export const addresses = {
+  chainId: SEPOLIA_CHAIN_ID,
+  deployer: "0x6edb706D0BD486BCcA07ddd189586481bbfD4811",
+  rwaCoins: import.meta.env.VITE_RWA_COINS || "0xb36Fe8b07D0E1b59ae8f10965A6F161d63ddC8e1",
+  rwaNft: import.meta.env.VITE_RWA_NFT || "0xaEbbA9173657795BeA06Dfe48E59b0d57778F1Fd",
+  rwaVerifiedAssets: import.meta.env.VITE_RWA_VERIFIED_ASSETS || "0x21763032B2170d995c866E249fc85Da49E02aF4c",
+  rwaManager: import.meta.env.VITE_RWA_MANAGER || "0x51293558BBD882FC7aFd4c04aFC277C46A8E3AE5",
+  nftVault: "0xe28Cd0837AD67c8b154a4ae3610a2387224AdbC1",
+  auctionHouse: "0x3ad7812766dd1B8AfA0CC1D8D7a3b39450111C38",
+  lendingManager: "0x16b0CA727b2284118574983F69288EfC96D63B17",
+  staking: "0x5E590Ea1C7068EF1c2A84bB208FFCFf2f03C97a6",
+  automation: "0x22e126E4b9FcDA219dcEd365b0a4D2052aC2872a",
+} as const;
